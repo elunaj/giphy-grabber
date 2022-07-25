@@ -30,7 +30,7 @@ function App() {
     const offset = getRandomIntInclusive(0, 100);
     const apiKey = process.env.REACT_APP_GIPHY_API_KEY;
     const limit = 50;
-    const res = await fetch(`http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchInput}&limit=${limit}&offset=${offset}`);
+    const res = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchInput}&limit=${limit}&offset=${offset}`);
     const data = await res.json();
 
     if (append) {

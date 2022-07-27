@@ -14,7 +14,7 @@ const Search = ({ fetchGifs, onChange, onKeyPress, searchResults, isPreviousSear
         </SearchBoxButton>
       </SearchBoxWrapper>
       <PreviousSearches searchResults={searchResults} isPreviousSearch={isPreviousSearch}  />
-      {/* {error ? <Error /> : ""} */}
+      {error ? <Error /> : ""}
     </SearchContainer>
   )
 }

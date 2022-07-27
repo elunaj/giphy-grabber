@@ -29,9 +29,9 @@ const Gifs = ({ searchResults, setIsFetching, isFetching }) => {
     <Gallery>
       {mostRecentSearchResult.map((gif, index) => {
         if (mostRecentSearchResult.length === index + 1) {
-          return <img ref={lastElementRef} key={index} src={gif.images.fixed_width.url} alt={gif.title} width={gif.images.fixed_width.width} length={gif.images.fixed_width.length}></img>
+          return <img ref={lastElementRef} key={index} src={gif.images.fixed_width.url} alt={gif.title}></img>
         }
-        return <img key={index} src={gif.images.fixed_width.url} alt={gif.title} width={gif.images.fixed_width.width} length={gif.images.fixed_width.length}></img>
+        return <img key={index} src={gif.images.fixed_width.url} alt={gif.title}></img>
       })}
     </Gallery>
   )
